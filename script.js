@@ -1,7 +1,6 @@
 Values = [];
 let width = 0;
 
-
 const next = event => {
    
     currentevent = event.currentTarget;
@@ -32,7 +31,7 @@ const datasubmit = event => {
     foamName = document.getElementById("foam-name");
     foamEmail = document.getElementById("foam-email");
     
-    if(foamName.value !==  ""){ debugger;
+    if(foamName.value !==  ""){ 
         foamName.style.border = "";
         confirmation.innerText = `Hi ${foamName.value} !!`;
 
