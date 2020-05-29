@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <form>
+            <div class="bar-container">
+                <div id="bar"></div>
+            </div>
+            <div class="sections" id="section-1">
+                <h1>What do you want to experience?</h1>
+                <div class="myvalues">
+                    <label class="individual-value" onclick='next(event)'> <img  src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> Adventure & nature </span> </label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> Beach & relaxation </span> </label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> Culture </span> </label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> Antique car </span> </label>
+                </div>
+            </div>
+
+            <div class="sections" id="section-2" style="display: none;">
+                <h1>How big is your tour group?</h1>
+                <div class="myvalues">
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"><span> 1 traveler </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 2 traveler </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 3 - 4 traveler </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 5+ traveler</span></label>
+                </div>
+            </div>
+
+            <div class="sections" id="section-3" style="display: none;">
+                <h1>How long do you want to travel?</h1>
+                <div class="myvalues">
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"><span> 1 week</span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 2 weeks</span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 3 - 4 weeks </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 5+ weeks</span></label>
+                </div>
+            </div>
+
+            <div class="sections" id="section-4" style="display: none;">
+                <h1>When do you want to travel?</h1>
+                <div class="myvalues">
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"><span> within 4 weeks </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span>1-4 months </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> 4+ months </span></label>
+                    <label class="individual-value" onclick='next(event)'> <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="1"> <span> I do not know </span></label>
+                </div>
+            </div>
+
+            <div class="sections" id="section-5" style="display: none;">
+                <div id="contant-foam">
+                    <h1>Contact Foam</h1>
+                    <h4> Your Name*</h4>
+                    <input type="text" id="foam-name">
+                    <h4> Your Email*</h4>
+                    <input type="email" id="foam-email">
+                    <h4> Additional Notes</h4>
+                    <textarea></textarea>
+                    <br>
+                    <button onclick="datasubmit(event)">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="sections" id="section-6" style="display: none;">
+                <h1 id="confrimation">
+                </h1>
+                <div>
+                   <h5> Your Foam has been submited </h5>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
